@@ -10,7 +10,7 @@ header{
     padding:40px
 }
 h1{
-    font-family:"cormorant garamond", serif;
+    font-family:"satisfy", serif;
     font-size:60px;
     margin:0;
 }
@@ -27,7 +27,7 @@ h1{
     font-size: 45px;
 }
 button{
-    background:#d7a9a0;
+    background:#fe89f0;
     color:#fff8f4;
     border:none
     padding:15px 30px;
