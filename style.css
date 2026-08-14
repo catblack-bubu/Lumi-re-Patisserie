@@ -1,51 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 body{
-    margin:0;
-background:#ffa4d9;
-font-family:Poppins,sans-serif;
-color:#310413;
+    background:#f7F0E8;
+    color:#5A2635;
+    font-family:Georgia,serif;
 }
-header{
-    background:#ffa4d9;
-    text-align:center;
-    padding:40px
-}
-h1{
-    font-family:"satisfy", serif;
-    font-size:60px;
-    margin:0;
-}
- header p{
-    font-size: 20px;
+/*inicio*/
+.inicio{
+    height:100vh;
+    background:
+    linear-gradient(right, #dec8e4 20%,transparent), url("hero.jpg");
 
-}
-.hero{
-    text-align: center;
-    padding: 80px 20px;
-}
-.hero h2{ 
-    font-family: Cormorant Grandmond, serif;
-    font-size: 45px;
-}
-button{
-    background:#fe89f0;
-    color:#fff8f4;
-    border:none
-    Padding 15px 30px;
-    border-radius: 30px;
-    font-size: 18px;
-    cursor:pointer;
-}
-.cards{
+    background-size: cover;
+    background-position-x:center;
+
     display:flex;
     justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-    padding:50px;
+    align-items:center;
+    text-align: center;
+
 }
-.card{
-    background-color: #fff8f4;
-    width: 250px;
-    padding: 25px;
-    border border-radius: 20px;
+
+ .inicio-texto h1 {
+    font-size:90px;
+
+}
+
+.inicio-texto p {
+    font-size:25px;
+    margin:20px;
+    letter-spacing:4px;
+
+}
+
+button { 
+
+    background: transparent;
+    border: 1px solid #848a33;
+    border-radius:30px;
+    padding: 12px 30px;
+    color: #5A2635;
+}
+
+/*BIENVENUE*/
+
+.bienvenue{
+    text-align: center;
+    padding:120px 20px;
+
+}
+
+.bienvenue h2 {
+    font-size: 70px;
+
+}
+.bienvenue p{
+    font-size: 22px;
+    margin: 20px;
     
 }
+
+/*CARDAPIO*/
+.cardapio {
+    padding: 80px 8%;
+    text-align: center;
+    background:#fcf8f3;
+
+}
+.titulo-pequeno {
+    color: #220005;
+    letter-spacing: 3px;
+    font-size: 12px;
+ }
+    .cardapio h2{
+font-size: 50px;
+        margin: 15px;
+ }
+.cards{
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 50px;
+
+}
+.card{
+width: 200px;
+background: #f7F0E8;
+padding-bottom: 20px;
+
+}
+.card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+
+    }
+
+.card h3{
+    font-size: 27px;
+    max-resolution: 15px;
+    }
+.card p{
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding: 0 15px;
+    line-height: 1.5;
+
+     }
+     /*HISTORIA*/
+     .historia{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 100px  10%;
+        background: #f3d9f3;
+         }
+
+        .historia div {
+            width:50%;
+
+         }
+          
+         .historia h2{
+            font-size:55px;
+            margin: 20px 0;
+
+            }
+
+           .historia p {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            margin: 10px 0;
+
+             }
+            .historia img {
+
+                width: 50%;
+
+            }    
+            /*ARTE*/
+            .arte{
+                text-align: center;
+                padding:100px 10%;
+
+                 }
+                .arte h2 {
+                font-size: 50 px;
+                margin: 25px;
+                } 
+                .arte h2 span{
+                    display: block;
+                    color: #43570e;
+                    font-style: italic;
+                } 
+                 .valores{ 
+                    display: flex;
+                    justify-content: center;
+                    gap: 50px;
+                    margin-top: 60px;
+                } 
+                .valores div{
+                    width: 250px; 
+                } 
+                 .valores h3{
+                    font-size: 28px;
+
+                }
+                .valores p{ 
+                    font-family: Arial, sans-serif;
+                    margin-top: 10px;
+                    line-height:1.5;
+            
+                    }
+                    /*RODAPE*/
+
+                   footer {
+                    background: #380110;
+                    color: f7f0e8;
+                    text-align: center;
+                    padding: 60px;
+
+                        }
+                       footer h2 {
+                        font-size: 40px;
+                    }
+                             footer p {
+                        margin-top: 10px;
+                             }
+
+
+
+
+
+
+
+
+
+     
+        
