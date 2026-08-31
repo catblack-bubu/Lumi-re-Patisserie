@@ -38,29 +38,40 @@ body{
 
 button { 
 
-    background: transparent;
-    border: 1px solid #848a33;
+    background: #24010a;
+    border: 1px solid #3b3f02;
     border-radius:30px;
-    padding: 12px 30px;
-    color: #5A2635;
+    padding: 14px 34px;
+    color: #3c5503;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+button:hover{
+    background: #eea5ee;
+    border-color: #140000;
+    transform: translateY(-3px);
+}
 /*BIENVENUE*/
 
 .bienvenue{
     text-align:center;
-    padding:120px 20px;
+    padding:140px 20px;
     margin: 20px;
 
 }
 
 .bienvenue h2 {
-    font-size: 70px;
+    font-size: 80;
+    font-weight: normal;
+    margin-bottom: 15px;
 
 }
 .bienvenue p{
     font-size: 22px;
-    margin: 20px;
+    margin: 15px 0 30px;
     
 }
 
@@ -115,9 +126,9 @@ padding-bottom: 20px;
      .historia{
         display: flex;
         align-items: center;
-        gap: 50px;
-        padding: 100px  10%;
-        background: #f3d9f3;
+        gap: 70px;
+        padding: 120px  10%;
+        background: #fab1fa;
          }
 
         .historia div {
@@ -127,8 +138,9 @@ padding-bottom: 20px;
          }
           
          .historia h2{
-            font-size:55px;
-            margin: 20px 0;
+            font-size:65px;
+            line-height: 1.1;
+            margin: 20px 0 30px;
 
             }
 
@@ -193,6 +205,21 @@ padding-bottom: 20px;
                         margin-top: 10px;
                              }
 
+                             .bienvenue h2,
+                             .card,
+                             .historia h2 {
+                                animation: aparecer 0.8s ease;
+                             }
+                             @keyframes aparecer {
+                                from{
+                                    opacity: 0;
+                                    transform: translateY(15px);
+                                }
+                                to{
+                                    opacity: 1;
+                                    transform: translateY(0);
+                                }
+                             }
 
 
 
