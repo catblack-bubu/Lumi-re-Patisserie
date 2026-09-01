@@ -1,46 +1,42 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background:#f7F0E8;
-    color:#5A2635;
-    font-family:Georgia,serif;
-}
-/*inicio*/
-.inicio{
-    height:100vh;
-    background:
-    linear-gradient(right, #dec8e4 20%,transparent), url("hero.jpg");
 
+body {
+    background: #f7F0E8;
+    color: #5A2635;
+    font-family: Georgia, serif;
+}
+
+/* INICIO */
+.inicio {
+    height: 100vh;
+    background: linear-gradient(to right, #dec8e4 20%, transparent), url("hero.jpg");
     background-size: cover;
-    background-position-x:center;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Centraliza a estrutura do conteúdo */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
     text-align: center;
-
 }
 
- .inicio-texto h1 {
-    font-size:90px;
-
+.inicio-texto h1 {
+    font-size: 90px;
 }
 
 .inicio-texto p {
-    font-size:25px;
-    margin:20px;
-    letter-spacing:4px;
-
+    font-size: 25px;
+    margin: 20px;
+    letter-spacing: 4px;
 }
 
 button { 
-
     background: #24010a;
     border: 1px solid #3b3f02;
-    border-radius:30px;
+    border-radius: 30px;
     padding: 14px 34px;
     color: #3c5503;
     font-family: Georgia, serif;
@@ -49,188 +45,181 @@ button {
     transition: 0.3s;
 }
 
-button:hover{
+button:hover {
     background: #0000ff;
     border-color: #140000;
     transform: translateY(-3px);
 }
-/*BIENVENUE*/
 
-.bienvenue{
+/* BIENVENUE */
+.bienvenue {
     min-height: 80vh;
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align:center;
-    padding:80px 20px;
-
+    text-align: center;
+    padding: 80px 20px;
 }
 
 .bienvenue h2 {
-    font-size: 80 px;
+    font-size: 80px;
     font-weight: normal;
     margin-bottom: 10px;
-
 }
-.bienvenue p{
+
+.bienvenue p {
     font-size: 22px;
     margin: 15px 0 30px;
-    
 }
 
-/*CARDAPIO*/
+/* CARDAPIO */
 .cardapio {
     padding: 80px 8%;
     text-align: center;
-    background:#fcf8f3;
-
+    background: #fcf8f3;
 }
+
 .titulo-pequeno {
     color: #220005;
     letter-spacing: 3px;
     font-size: 12px;
- }
-    .cardapio h2{
-font-size: 50px;
-        margin: 15px;
- }
-.cards{
-display: flex;
-justify-content: center;
-gap: 20px;
-margin-top: 50px;
-
 }
-.card{
-width: 200px;
-background: #f7F0E8;
-padding-bottom: 20px;
 
+.cardapio h2 {
+    font-size: 50px;
+    margin: 15px;
 }
-.card img{
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.card {
+    width: 200px;
+    background: #f7F0E8;
+    padding-bottom: 20px;
+}
+
+.card img {
     width: 100%;
     height: 170px;
     object-fit: cover;
+}
 
-    }
-
-.card h3{
+.card h3 {
     font-size: 27px;
     margin: 15px;
-    }
-.card p{
+}
+
+.card p {
     font-family: Arial, sans-serif;
     font-size: 13px;
     padding: 0 15px;
     line-height: 1.5;
+}
 
-     }
-     /*HISTORIA*/
-     .historia{
-        display: flex;
-        align-items: center;
-        gap: 70px;
-        padding: 120px  10%;
-        background: #ff0000;
-         }
+/* HISTORIA */
+.historia {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 120px 10%;
+    background: #ff0000;
+}
 
-        .historia div {
-            width:50%;
-            align-items: center;
+.historia div {
+    width: 50%;
+    align-items: center;
+}
 
-         }
-          
-         .historia h2{
-            font-size:65px;
-            line-height: 1.1;
-            margin: 20px 0 30px;
+.historia h2 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin: 20px 0 30px;
+}
 
-            }
+.historia p {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    margin: 10px 0;
+}
 
-           .historia p {
-            font-family: Arial, sans-serif;
-            line-height: 1.7;
-            margin: 10px 0;
+.historia img {
+    width: 50%;
+}    
 
-             }
-            .historia img {
+/* ARTE */
+.arte {
+    text-align: center;
+    padding: 100px 10%;
+}
 
-                width: 50%;
+.arte h2 {
+    font-size: 50px;
+    margin: 25px;
+} 
 
-            }    
-            /*ARTE*/
-            .arte{
-                text-align: center;
-                padding:100px 10%;
+.arte h2 span {
+    display: block;
+    color: #43570e;
+    font-style: italic;
+} 
 
-                 }
-                .arte h2 {
-                font-size: 50 px;
-                margin: 25px;
-                } 
-                .arte h2 span{
-                    display: block;
-                    color: #43570e;
-                    font-style: italic;
-                } 
-                 .valores{ 
-                    display: flex;
-                    justify-content: center;
-                    gap: 50px;
-                    margin-top: 60px;
-                } 
-                .valores div{
-                    width: 250px; 
-                } 
-                 .valores h3{
-                    font-size: 28px;
+.valores { 
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px;
+} 
 
-                }
-                .valores p{ 
-                    font-family: Arial, sans-serif;
-                    margin-top: 10px;
-                    line-height:1.5;
-            
-                    }
-                    /*RODAPE*/
+.valores div {
+    width: 250px; 
+} 
 
-                   footer {
-                    background: #380110;
-                    color: f7f0e8;
-                    text-align: center;
-                    padding: 60px;
+.valores h3 {
+    font-size: 28px;
+}
 
-                        }
-                       footer h2 {
-                        font-size: 40px;
-                    }
-                             footer p {
-                        margin-top: 10px;
-                             }
+.valores p { 
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    line-height: 1.5;
+}
 
-                             .bienvenue h2,
-                             .card,
-                             .historia h2 {
-                                animation: aparecer 0.8s ease;
-                             }
-                             @keyframes aparecer {
-                                from{
-                                    opacity: 0;
-                                    transform: translateY(15px);
-                                }
-                                to{
-                                    opacity: 1;
-                                    transform: translateY(0);
-                                }
-                             }
+/* RODAPE */
+footer {
+    background: #380110;
+    color: #f7f0e8;
+    text-align: center;
+    padding: 60px;
+}
 
+footer h2 {
+    font-size: 40px;
+}
 
+footer p {
+    margin-top: 10px;
+}
 
+/* ANIMATIONS */
+.bienvenue h2,
+.card,
+.historia h2 {
+    animation: aparecer 0.8s ease;
+}
 
-
-
-
-
-     
-        
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
