@@ -17,9 +17,9 @@ body {
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column; /* Centraliza a estrutura do conteúdo */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -51,13 +51,13 @@ button:hover {
     transform: translateY(-3px);
 }
 
-/* BIENVENUE */
+/* BIENVENUE - CENTRALIZADO */
 .bienvenue {
     min-height: 80vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
     text-align: center;
     padding: 80px 20px;
 }
@@ -118,108 +118,4 @@ button:hover {
 .card p {
     font-family: Arial, sans-serif;
     font-size: 13px;
-    padding: 0 15px;
-    line-height: 1.5;
-}
-
-/* HISTORIA */
-.historia {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    padding: 120px 10%;
-    background: #ff0000;
-}
-
-.historia div {
-    width: 50%;
-    align-items: center;
-}
-
-.historia h2 {
-    font-size: 65px;
-    line-height: 1.1;
-    margin: 20px 0 30px;
-}
-
-.historia p {
-    font-family: Arial, sans-serif;
-    line-height: 1.7;
-    margin: 10px 0;
-}
-
-.historia img {
-    width: 50%;
-}    
-
-/* ARTE */
-.arte {
-    text-align: center;
-    padding: 100px 10%;
-}
-
-.arte h2 {
-    font-size: 50px;
-    margin: 25px;
-} 
-
-.arte h2 span {
-    display: block;
-    color: #43570e;
-    font-style: italic;
-} 
-
-.valores { 
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 60px;
-} 
-
-.valores div {
-    width: 250px; 
-} 
-
-.valores h3 {
-    font-size: 28px;
-}
-
-.valores p { 
-    font-family: Arial, sans-serif;
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
-/* RODAPE */
-footer {
-    background: #380110;
-    color: #f7f0e8;
-    text-align: center;
-    padding: 60px;
-}
-
-footer h2 {
-    font-size: 40px;
-}
-
-footer p {
-    margin-top: 10px;
-}
-
-/* ANIMATIONS */
-.bienvenue h2,
-.card,
-.historia h2 {
-    animation: aparecer 0.8s ease;
-}
-
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+    padding: 0 15px;}
